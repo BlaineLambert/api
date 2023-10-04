@@ -18,6 +18,7 @@ const fetchCatImage = () => {
 
             // Create an <img> element and set its source
             const catImage = document.createElement('img');
+
             catImage.src = imageUrl;
 
             // Clear the previous image (if any) and append the new one
@@ -31,3 +32,6 @@ const fetchCatImage = () => {
 
 // Add a click event listener to the button
 getCatButton.addEventListener('click', fetchCatImage);
+// getCatButton.addEventListener('click', () => {
+//     body.style.backgroundColor = "pink"
+// })
