@@ -20,7 +20,8 @@ const fetchCatImage = () => {
             const catImage = document.createElement('img');
 
             catImage.src = imageUrl;
-
+            catImage.style.height = "400px"
+            catImage.style.width = "600px"
             // Clear the previous image (if any) and append the new one
             catImageContainer.innerHTML = '';
             catImageContainer.appendChild(catImage);
